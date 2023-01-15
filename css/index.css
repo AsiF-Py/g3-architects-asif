@@ -49,11 +49,11 @@ body {
 }
 
 .header nav a {
-    /* text-decoration: none;
+    text-decoration: none;
     color: #424242;
     font-weight: 500;
     font-size: 18px;
-    line-height: 26px; */
+    line-height: 26px;
 }
 
 .bannaer {
@@ -270,38 +270,54 @@ body {
     margin-bottom: 150px;
 }
 
-.header,
-.facts,
-.features,
-.sponspors,
-.footer {
-    display: none;
-}
+
+
+
 
 @media only screen and (max-width: 576px) {
-    body{
+    body {
         margin-left: 40px;
         margin-right: 40px;
     }
-    .header{
+
+    .header {
         justify-content: flex-start;
     }
-    
-    .header nav ol{
+
+    .header nav ol {
         flex-direction: column;
     }
+
     .header nav li {
         margin-right: 0px;
     }
-    .header h1{
+
+    .header h1 {
         font-size: 20px;
     }
-    
-    .gallery{
+
+    .gallery {
         flex-direction: column;
         align-items: center;
     }
-    .gallery-img{
+
+    .gallery-img {
         grid-template-columns: 1fr;
     }
+
+    .features{
+    flex-direction: column;
+}
+
+.facts-card {
+    flex-direction: column;
+    gap: 50px;
+}
+.sponspors-logo{
+    flex-direction: column;
+    gap: 20px;
+}
+.footer{
+    padding: 27px;
+}
 }
